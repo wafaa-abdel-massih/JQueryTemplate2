@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tanatos Studio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:400;800" rel="stylesheet">
     <!-- render all elements normally -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- font awesome -->
@@ -13,6 +16,45 @@
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
+    <!-- header-->
+    <header id="home">
+        <div class="container">
+            <nav>
+                <span>Tanatos<span class="logo">Studio</span></span>
+                <div>
+                    <ul class="links">
+                        <li><a class="active" href="#" data-value="home">Home</a></li>
+                        <li><a href="#" data-value="feature">features</a></li>
+                        <li><a href="#" data-value="works">works</a></li>
+                        <li><a href="#" data-value="testimonials">testimonials</a></li>
+                        <li><a href="#" data-value="team">team</a></li>
+                        <li><a href="#" data-value="contact">Contact</a></li>
+                    </ul>
+                    <button class="toggle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="intro text-centered">
+                <h1 class="upper">We Design <span>Things</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Iure nulla illo aspernatur perspiciatis quo modi delectus, 
+                    labore sequi voluptates rerum et molestias, 
+                    doloribus quasi earum expedita voluptatum nesciunt asperiores laborum!
+                </p>
+                <div class="buttons">
+                    <button class="upper active">Hire US</button>
+                    <button class="upper">Our Works</button>
+                </div>
+            </div>
+            <div class="arrow">
+               <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
