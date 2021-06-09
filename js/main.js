@@ -37,6 +37,15 @@ $(function () {
         }, 1000);
     });
 
+    // scroll to features 
+    $('header .arrow i').click(function () {
+        $('html, body').animate({
+            scrollTop: $('.features').offset().top
+        }, 1000);
+    });
+    
     // trigger nice scroll
-    $('html').niceScroll();
+    $('html').niceScroll({
+        cursorColor: '#f7600e'
+    });
 });
