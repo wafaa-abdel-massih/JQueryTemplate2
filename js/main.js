@@ -44,8 +44,21 @@ $(function () {
         }, 1000);
     });
     
+    // works images hover
+    $('.works .items-box .item').hover(function () {
+        $(this).children(".overlay").fadeIn();
+    },
+    function () {
+        $(this).children(".overlay").fadeOut();
+    });
+
+    // show hidden item from work
+    $('.works .more').click(function () {
+        $('.works .hidden').fadeIn().removeClass('hidden');
+    });
+
     // trigger nice scroll
     $('html').niceScroll({
-        cursorColor: '#f7600e'
+        cursorcolor: '#f7600e'
     });
 });
