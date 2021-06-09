@@ -285,7 +285,7 @@ header .arrow i {
 /* start subscribe style */
 
 .subscribe {
-    background: linear-gradient(rgb(49 55 61 / 90%), rgb(49 55 61 / 90%)), url(../images/subscribe.jpg);
+    background: linear-gradient(rgb(49 55 61 / 90%), rgb(49 55 61 / 90%)), url(../images/image0.jpg);
     background-size: cover;
 }
 
@@ -407,3 +407,53 @@ header .arrow i {
 }
 
 /* end works style */
+
+/* start testimonials style */
+
+.testimonials {
+    background: linear-gradient(rgb(49 55 61 / 90%), rgb(49 55 61 / 90%)), url(../images/image0.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.testimonials .container {
+    position: relative;
+}
+
+.testimonials .client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    line-height: 2;
+    margin: 0 15%;
+}
+
+.testimonials .client img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonials .fa-chevron-right,
+.testimonials .fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    color: #999;
+    cursor: pointer;
+}
+
+.testimonials .fa-chevron-right {
+    right: 0;
+}
+
+.testimonials .fa-chevron-left {
+    left: 0;
+}
+
+.testimonials .fa-chevron-right:hover,
+.testimonials .fa-chevron-left:hover {
+    color: var(--main-color);
+}
+
+/* end testimonials style */

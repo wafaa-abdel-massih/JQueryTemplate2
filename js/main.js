@@ -57,6 +57,33 @@ $(function () {
         $('.works .hidden').fadeIn().removeClass('hidden');
     });
 
+    // check testomonials
+    var leftArrow = $('.testimonials .fa-chevron-left'),
+        rightArrow = $('.testimonials .fa-chevron-right');
+
+    function checkClient() {
+        $('.client:first').hasClass('active') ? leftArrow.fadeOut() : leftArrow.fadeIn();
+        $('.client:last').hasClass('active') ? rightArrow.fadeOut() : rightArrow.fadeIn();
+    }
+
+    checkClient();
+
+    // testimonials slider
+    $('.testimonials i').click(function () {
+        if($(this).hasClass('fa-chevron-right')) {
+            $('.client.active').fadeOut(1000, function () {
+                $(this).removeClass('active').next('.client').addClass('active').fadeIn(1000);
+                checkClient();
+            });
+        } 
+        else {
+            $('.client.active').fadeOut(1000, function () {
+                $(this).removeClass('active').prev('.client').addClass('active').fadeIn(1000);
+                checkClient();
+            });
+        }
+    });
+
     // trigger nice scroll
     $('html').niceScroll({
         cursorcolor: '#f7600e'
