@@ -43,6 +43,20 @@ $(function () {
             scrollTop: $('.features').offset().top
         }, 1000);
     });
+
+    // scroll to Our work 
+    $('.go-team').click(function () {
+        $('html, body').animate({
+            scrollTop: $('.team').offset().top
+        }, 1000);
+    });
+
+    // scroll to features 
+    $('.go-works').click(function () {
+        $('html, body').animate({
+            scrollTop: $('.works').offset().top
+        }, 1000);
+    });
     
     // works images hover
     $('.works .items-box .item').hover(function () {
